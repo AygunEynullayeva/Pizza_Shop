@@ -1,0 +1,486 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+html,body{ scroll-behavior: smooth;
+
+}
+.menyu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+i:hover{
+    color:orange;
+}
+ul{
+    display: flex;
+     list-style: none;
+}
+nav{
+    width: 420px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+li{
+    margin-left: 15px;
+}
+.menyu{
+    
+    border: 1px solid black;
+    height: 50px;
+    background-color: black;
+}
+.menyu div i{
+    color: white;
+    font-size: 1.7em;
+
+}
+.menyu div i:hover{
+    color: orange;
+
+}
+.menyu div .order{
+    color: white;
+ background-color: black;
+ width: 110px;
+ height: 30px;
+ font-size: 1em;
+ border: 1px solid white;
+}
+.menyu div .order:hover{
+    border: 1px solid orangered;
+}
+.birinci{
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    background-image: url(./pizza-back.jpg);
+    background-attachment: fixed;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.birinci .takeout h2{
+    color: black;
+    font-size: 2em;
+    font-family: 'Alkatra', cursive;
+   
+}
+.birinci .pizzashop h2{
+    color: black;
+    font-size: 8em;
+    font-family: 'Merriweather', serif;
+}
+.birinci .the h2{
+    font-family: italic;
+    font-size: 3em;
+    color: black;
+    font-family: 'Inspiration', cursive;
+}
+.birinci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.order2{
+    height:40px ;
+    width: 150px;
+    color: black;
+    background-color: white;
+    font-size: 1em;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+.order2:hover{
+    background-color: orangered;
+}
+.story{
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   justify-content: space-between;
+   border-top: 6px solid black;
+}
+.story .our h2{ border: 3px solid black;
+    width: 300px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Alkatra', cursive;
+}
+.story .chef img{
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    
+    
+}
+.story .passion h2{
+    font-size: 4em;
+    height: 100px;
+    width: 900px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.story .yazi p{
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Raleway', sans-serif;
+}
+.eats{
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    background-attachment: fixed;
+    background-image:  url(./pizz-cafe.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.eats .yuxari{
+ width: 330px;
+ height: 330px;
+ border: 10px solid white;
+ background-color: rgba(0, 0, 0, 0.600);
+ transform: rotate(45deg);
+ position: relative;
+ margin-left: 300px;
+}
+.eats .yuxari h2{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2em;
+   transform: rotate(none);
+   margin-top: 120px;
+   margin-left: 17px;
+   
+}
+.eats .yuxari h4{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.eats .asagi{
+    width: 330px;
+ height: 330px;
+ border: 10px solid white;
+ background-color: rgba(0, 0, 0, 0.600);
+ transform: rotate(45deg);
+ position: relative;
+ margin-left: 700px;
+}
+.eats .yuxari div{
+    transform: rotate(-45deg);
+}
+.eats .asagi h2{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2em;
+   transform: rotate(none);
+   margin-top: 120px;
+   margin-left: 60px; 
+}
+.eats .asagi h4{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center; 
+}
+.eats .asagi div{
+    transform: rotate(-45deg);
+
+}
+.reservations{
+    width: 100%;
+    height: 500px;
+   
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 6px solid black;
+   align-items: center;
+}
+.reservations .input{
+    display: flex;
+}
+.reservations .res{
+    border: 3px solid black;
+    width: 300px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Alkatra', cursive;
+   
+    
+   
+}
+.reservations .mak{
+    font-size: 4em;
+    height: 100px;
+    width: 1000px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.reservations .input{
+    height:30px ;
+    width: 700px;
+    justify-content: space-around;
+}
+.reservations .her{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.reservations .input input{
+    border-color: gray;
+    text-align: center;
+}
+.reservations .her .ad{
+    display: flex;
+    width: 480px;
+    height: 30px;
+    justify-content: space-around;
+}
+.reservations .her .find{
+    height: 30px;
+    width: 150px;
+    color:black;
+    background-color: white;
+    font-size: 1em;
+    border: 1px solid black;
+}
+.reservations .her .find:hover{
+    background-color: orangered;
+}
+.sekil img{
+    width: 265px;
+    height: 265px;
+    object-fit: cover;
+}
+.sekil{
+    width: 100%;
+    height: 600px;
+  
+ margin-left: 3px;
+    box-sizing: border-box;
+    
+}
+.party{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 6px solid black;
+   align-items: center;
+}
+.party .private{
+    border: 3px solid black;
+    width: 300px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Alkatra', cursive;
+}
+.party .fancy{
+    font-size: 4em;
+    height: 100px;
+    width: 1000px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.party p{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.party .con{
+    height: 40px;
+    width: 150px;
+    color: black;
+    background-color: white;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.party .con:hover{
+    background-color: orangered;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+footer i{
+    color: white;
+    font-size: 3em;
+   margin: 15px;
+  
+}
+footer label{
+    color: white;
+   
+}
+footer input{
+  width: 200px;
+  height: 20px;
+}
+.bars{
+    display: none;
+}
+.elaqe{
+    width: 160px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.elaqe i{
+    font-size: 2em;
+}
+@media screen and (min-width:300px) and (max-width:600px){
+    .birinci{background-size: 100% auto;
+    background-repeat: no-repeat ;}
+   .menyu .bars{
+        display: block;
+    }
+    .menyu{
+        width: 545px;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .birinci{
+        background-color: white;
+    }
+    .eats{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .eats .yuxari{
+        margin-left: 0px;
+        align-self: center;
+    }
+    .eats .asagi{
+        margin-left: 0px;
+        align-self: center;
+    }
+    .menyu .user{
+        display: none;
+    }
+    .butun{
+        max-width: 100%;
+        max-height: fit-content;
+    }
+    .sekil .piz{
+        display: none;
+        
+    }
+    .menyu nav{
+        display: none;
+    }
+    .birinci h2{
+      font-size: 24px;
+      text-align: center;
+      
+    }
+   
+    .story h2{
+        font-size: 24px;
+        text-align: center;
+
+    }
+    .story .chef img{
+        max-width:500px ;
+        
+    }
+    .story .passion h2{
+       font-size: 24px;
+        
+    }
+    .eats{
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+   .eats .asagi{
+    align-items: center;
+    
+    justify-content: center;
+   }
+   .her .input{
+    width: 400px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   }
+   input{
+    width: 100px;
+    height: 30px;
+   }
+   .reservations h2{
+    font-size: 24px;
+    text-align: center;
+   } 
+   .reservations .mak{
+    font-size: 24px;
+    align-items: center;
+   }
+   .reservations .ad h3{
+    display: none;
+   }
+   .her{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .reservations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .sekil img{
+   flex: none;
+   margin-left: 120px;
+   }
+   .party h2{
+    font-size: 24px;
+    text-align: center;
+   }
+   .her .ad{
+    display: none;
+   }
+   .party .fancy{
+    font-size: 24px;
+   }
+}
